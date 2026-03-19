@@ -1,4 +1,4 @@
-# Benchmark Results — TiltedBBL
+# Optimization Results
 
 ## Environment
 - Julia 1.10
