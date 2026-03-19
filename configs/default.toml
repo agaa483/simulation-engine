@@ -1,0 +1,32 @@
+# Tilted Bottom Boundary Layer — Default Configuration
+
+[grid]
+Lx = 200.0   # domain length in x (meters)
+Ly = 100.0   # domain length in y (meters)
+Lz = 100.0   # domain length in z (meters)
+Nx = 64      # grid points in x
+Ny = 32      # grid points in y
+Nz = 64      # grid points in z
+refinement = 1.8
+stretching = 10.0
+
+[physics]
+theta_deg = 3.0       # tilt angle (degrees)
+N2 = 1e-5             # background stratification (s⁻²)
+V_inf = 0.1           # background along-slope velocity (m/s)
+z0 = 0.1              # roughness length (m)
+kappa_vk = 0.4        # von Kármán constant
+nu = 1e-4             # viscosity (m²/s)
+kappa = 1e-4          # diffusivity (m²/s)
+f = 1e-4              # Coriolis parameter (s⁻¹)
+
+[simulation]
+stop_time_days = 1.0          # simulation duration (days)
+max_dt_change = 1.1           # max timestep change per step
+cfl = 0.7                     # CFL number
+progress_interval = 200       # iterations between progress messages
+output_interval_minutes = 20  # minutes between NetCDF snapshots
+
+[output]
+filename = "tilted_bbl_3d.nc"
+overwrite_existing = true
