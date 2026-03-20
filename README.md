@@ -74,4 +74,3 @@ See [benchmarks/RESULTS.md](benchmarks/RESULTS.md) for full results.
 ## Tech Stack
 
 Julia, Oceananigans.jl, BenchmarkTools.jl, GitHub Actions, TOML
-
